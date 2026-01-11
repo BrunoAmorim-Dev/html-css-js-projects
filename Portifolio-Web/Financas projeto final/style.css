@@ -1,0 +1,29 @@
+* { margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif; }
+body { background:#f4f4f9; color:#333; transition:0.3s; }
+.dark { background:#1a1a1a; color:#ddd; }
+
+header { display:flex; justify-content:space-between; align-items:center; padding:20px; background:#5c67f2; color:white; }
+header button { padding:10px; border:none; border-radius:8px; cursor:pointer; }
+
+.container { max-width:900px; margin:auto; padding:20px; }
+
+.card { background:white; padding:20px; border-radius:12px; margin-bottom:20px; box-shadow:0 5px 15px rgba(0,0,0,0.1); }
+.dark .card { background:#2a2a2a; }
+
+.input-group { display:flex; flex-direction:column; gap:10px; }
+.input-group input, .input-group select { padding:10px; font-size:16px; border-radius:8px; border:1px solid #ccc; }
+button#addBtn { padding:12px; background:#5c67f2; color:white; border:none; border-radius:8px; cursor:pointer; }
+
+#lista { list-style:none; padding:0; }
+#lista li { background:#fff; padding:15px; border-radius:10px; margin:10px 0; display:flex; justify-content:space-between; align-items:center; }
+.dark #lista li { background:#333; }
+
+.acoes button { margin-left:8px; padding:6px 10px; border:none; border-radius:6px; cursor:pointer; }
+.btn-efetivar { background:#4CAF50; color:white; }
+.btn-editar { background:#FFC107; color:black; }
+.btn-excluir { background:#E53935; color:white; }
+
+.valor-negativo { color:#E53935; }
+.valor-positivo { color:#4CAF50; }
+
+.pendente { opacity:0.6; background-color:#fff8d4; border-left:4px solid #f1c40f; }

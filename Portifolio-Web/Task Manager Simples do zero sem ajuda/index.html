@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título + botão de tema (coloquei o botão dentro do h1 para ficar visível) -->
+        <h1>
+            Minhas Tarefas 📝
+            <!-- Botão que vai alternar o tema; id usado no JS -->
+            <button id="temaBtn" class="tema-btn" aria-label="Alternar tema">🌙</button>
+        </h1>
+
+        <div class="input-area">
+            <input type="text" id="novaTarefaInput" placeholder="Digite uma nova tarefa...">
+            <button id="adicionarTarefaBtn">Adicionar</button>
+        </div>
+
+        <ul id="listaDeTarefas"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

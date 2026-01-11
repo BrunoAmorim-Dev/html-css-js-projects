@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Financeiro Avançado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>💰 Controle Financeiro</h1>
+  <button id="toggleTema">🌙 Modo Escuro</button>
+</header>
+
+<main class="container">
+
+  <!-- FORMULÁRIO -->
+  <section class="card">
+    <h2>Adicionar Transação</h2>
+
+    <div class="input-group">
+      <label>Tipo de Transação</label>
+      <select id="tipoTransacao">
+        <option value="simples">Simples</option>
+        <option value="parcelada">Parcelada</option>
+      </select>
+
+      <label>Descrição</label>
+      <input type="text" id="descricao" placeholder="Descrição da transação...">
+
+      <label>Categoria</label>
+      <select id="categoria">
+        <option value="salario">💼 Salário</option>
+        <option value="alimentacao">🍔 Alimentação</option>
+        <option value="lazer">🎮 Lazer</option>
+        <option value="investimento">📈 Investimento</option>
+        <option value="contas">📄 Contas</option>
+        <option value="outros">📦 Outros</option>
+      </select>
+
+      <div id="simplesCampos">
+        <label>Valor</label>
+        <input type="number" id="valorSimples" placeholder="Ex: 1200">
+        <label>Data</label>
+        <input type="date" id="dataSimples">
+        <label>Status</label>
+        <select id="statusSimples">
+          <option value="efetivado">Efetivado</option>
+          <option value="pendente">Pendente</option>
+        </select>
+      </div>
+
+      <div id="parceladaCampos" style="display:none;">
+        <label>Valor Total</label>
+        <input type="number" id="valorTotal" placeholder="Ex: 3000">
+        <label>Valor por Parcela</label>
+        <input type="number" id="valorParcela" placeholder="Ex: 300">
+        <label>Número de Parcelas</label>
+        <input type="number" id="numParcelas" placeholder="Ex: 10">
+        <label>Data da Primeira Parcela</label>
+        <input type="date" id="dataInicioParcelas">
+      </div>
+
+      <button id="addBtn">Adicionar</button>
+    </div>
+  </section>
+
+  <!-- RESUMO -->
+  <section class="card">
+    <h2>Resumo</h2>
+    <div class="resumo">
+      <p>Saldo Atual: <span id="saldoAtual">R$ 0,00</span></p>
+      <p>Valor Pendente: <span id="pendente">R$ 0,00</span></p>
+      <p>Projeção Próximo Mês: <span id="projecao">R$ 0,00</span></p>
+    </div>
+  </section>
+
+  <!-- LISTA -->
+  <section class="card">
+    <h2>Transações</h2>
+    <ul id="lista"></ul>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

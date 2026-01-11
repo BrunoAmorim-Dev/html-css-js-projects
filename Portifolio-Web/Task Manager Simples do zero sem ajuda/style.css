@@ -1,0 +1,115 @@
+/* --- Seu CSS existente --- */
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+#novaTarefaInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#adicionarTarefaBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #5c67f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#listaDeTarefas {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#listaDeTarefas li {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.concluida {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.excluir-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Pequeno ajuste no botão de tema */
+.tema-btn {
+    margin-left: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 16px;
+}
+
+/* ---- TEMA ESCURO ---- */
+/* Cole essa parte ao final do style.css */
+body.dark {
+    background-color: #1b1b1f;
+    color: #eaeaea;
+}
+
+body.dark .container {
+    background-color: #232327;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+body.dark input#novaTarefaInput {
+    background-color: #2f3136;
+    color: #eaeaea;
+    border: 1px solid #444;
+}
+
+body.dark #adicionarTarefaBtn {
+    background-color: #6f76ff;
+}
+
+body.dark #listaDeTarefas li {
+    background-color: #2a2a2e;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+body.dark .excluir-btn {
+    background-color: #ff5c5c;
+    color: white;
+}
